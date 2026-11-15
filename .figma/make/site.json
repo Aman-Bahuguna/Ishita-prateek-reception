@@ -1,0 +1,14 @@
+{
+  "title": "Ishita & Prateek - 2nd Dec",
+  "description": "Wedding festivities and invitation of Ishita & Prateek on 2nd December 2026.",
+  "icons": {
+    "icon": "/favicon.png"
+  },
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
