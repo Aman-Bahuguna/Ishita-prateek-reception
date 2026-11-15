@@ -288,24 +288,46 @@
   transform: translateY(-0.04em);
 }
 
-.couple-cutout {
+.couple-cutout-wrap {
   position: absolute;
   bottom: 14.5svh;
   right: 0;
   left: 0;
   z-index: 1;
-  width: auto;
-  max-width: 82vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   height: min(45svh, 580px);
   margin: 0 auto;
-  object-fit: contain;
-  object-position: center bottom;
+  pointer-events: none;
   opacity: 0;
-  filter: drop-shadow(0 5px 4px rgb(73 35 30 / 0.16)) drop-shadow(0 18px 15px rgb(76 43 31 / 0.26))
-    drop-shadow(-10px 25px 28px rgb(86 53 37 / 0.16));
   transform: translateY(46px) scale(0.96);
   visibility: hidden;
   will-change: opacity, transform;
+}
+
+.couple-cutout-wrap picture {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  max-width: 82vw;
+}
+
+.couple-cutout {
+  display: block;
+  width: auto;
+  max-width: 82vw;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 12px 20px rgb(60 25 20 / 0.28));
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  isolation: isolate;
 }
 
 .scroll-cue {

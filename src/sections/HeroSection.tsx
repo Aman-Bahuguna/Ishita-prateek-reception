@@ -14,7 +14,7 @@ export function HeroSection() {
   const blessingRef = useRef<HTMLParagraphElement>(null);
   const welcomeRef = useRef<HTMLParagraphElement>(null);
   const namesRef = useRef<HTMLHeadingElement>(null);
-  const coupleRef = useRef<HTMLImageElement>(null);
+  const coupleRef = useRef<HTMLDivElement>(null);
   const scrollCueRef = useRef<HTMLAnchorElement>(null);
   const unlockTimerRef = useRef<number | null>(null);
 
@@ -86,6 +86,7 @@ export function HeroSection() {
             filter: "blur(0px)",
             duration: reducedMotion ? 0.01 : 0.9,
             ease: "power2.out",
+            clearProps: "filter",
           },
           reducedMotion ? ">" : 1.15,
         )
@@ -104,6 +105,7 @@ export function HeroSection() {
             filter: "blur(0px)",
             duration: reducedMotion ? 0.01 : 1.15,
             ease: "power2.out",
+            clearProps: "filter,clipPath",
           },
           reducedMotion ? ">" : "-=0.3",
         )
@@ -124,6 +126,7 @@ export function HeroSection() {
             filter: "blur(0px)",
             duration: reducedMotion ? 0.01 : 1.35,
             ease: "back.out(1.35)",
+            clearProps: "filter",
           },
           reducedMotion ? ">" : "-=0.28",
         )
@@ -133,15 +136,13 @@ export function HeroSection() {
             autoAlpha: 0,
             y: 46,
             scale: 0.96,
-            filter: "blur(5px) drop-shadow(0 18px 15px rgb(76 43 31 / 0.12))",
           },
           {
             autoAlpha: 1,
             y: 0,
             scale: 1,
-            filter:
-              "blur(0px) drop-shadow(0 5px 4px rgb(73 35 30 / 0.16)) drop-shadow(0 18px 15px rgb(76 43 31 / 0.26)) drop-shadow(-10px 25px 28px rgb(86 53 37 / 0.16))",
             duration: reducedMotion ? 0.01 : 1.45,
+            ease: "power3.out",
           },
           reducedMotion ? ">" : "-=0.35",
         )
@@ -236,12 +237,18 @@ export function HeroSection() {
             </h1>
           </div>
 
-          <img
-            ref={coupleRef}
-            className="couple-cutout"
-            src="/images/ishita-prateek-cutout.png"
-            alt="Prateek and Ishita"
-          />
+          <div ref={coupleRef} className="couple-cutout-wrap">
+            <picture>
+              <source type="image/webp" srcSet="/images/ishita-prateek-cutout.webp" />
+              <img
+                className="couple-cutout"
+                src="/images/ishita-prateek-cutout.png"
+                alt="Prateek and Ishita"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
+          </div>
 
           <a
             ref={scrollCueRef}
