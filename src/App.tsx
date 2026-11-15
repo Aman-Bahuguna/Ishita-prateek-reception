@@ -9,7 +9,7 @@ import { WeddingCountdown } from "./sections/WeddingCountdown";
 
 export default function App() {
   useEffect(() => {
-    document.title = "Ishita & Prateek - 2nd Dec";
+    document.title = "Prateek & Ishita - 6th Dec";
   }, []);
 
   return (

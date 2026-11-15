@@ -3,16 +3,10 @@ import { gsap } from "../lib/gsap";
 
 const complimentFamilies = [
   {
-    members: ["Mrs. Saroj Agarwal", "Mr. Kaushal Agarwal"],
-    businesses: ["Amichand Medical Hall", "Rudransh Marketing"],
+    members: ["Mrs. Preeti Agarwal", "Mr. Sanjay Agarwal"],
   },
   {
-    members: ["Mrs. Babita Agarwal", "Mr. Akhilesh Agarwal"],
-    businesses: ["Choice Emporium"],
-  },
-  {
-    members: ["Mrs. Reshu Agarwal", "Mr. Saurabh Agarwal"],
-    businesses: ["Amichand Traders"],
+    members: ["Mrs. Shivani Agarwal", "Mr. Kshitij Agarwal"],
   },
 ];
 
@@ -88,7 +82,7 @@ export function RsvpSection() {
 
         <div className="rsvp-contact rsvp-reveal">
           <span className="rsvp-contact-label">Kindly RSVP to</span>
-          <strong>Mr. Kaushal Agarwal</strong>
+          <strong>Mr. Sanjay Agarwal</strong>
         </div>
 
         <div className="rsvp-compliments">
@@ -101,11 +95,6 @@ export function RsvpSection() {
                     <span key={member}>{member}</span>
                   ))}
                 </h3>
-                <p>
-                  {family.businesses.map((business) => (
-                    <span key={business}>{business}</span>
-                  ))}
-                </p>
               </article>
             ))}
           </div>
@@ -119,13 +108,14 @@ export function RsvpSection() {
           </blockquote>
           <p className="rsvp-with-love">With lots of love,</p>
           <p className="rsvp-squad-names">
-            Mayank, Kajal, Nikhil, Shefali, Prakhar, Shivansh, Tiya &amp; Raghav
+            Tushar, Shalu, Arpit, Shivangi, Shobhit, Rupam, Shefali, Neha, Monika, Pragya, Sakshi,
+            Ritik, Vasu, Aryan, Chetan, Vaibhav &amp; Aadi
           </p>
         </div>
 
         <p className="rsvp-little-ones rsvp-reveal">
-          <span>Bui ki shaadi ke liye bekaraar</span>
-          Minto, Pari, Shiv aur Gungun kar rahe hain aap sabka intezaar!
+          <span>Bachchon mein</span>
+          Piyush, Neha, Sparsh, Arisha, Krisha, Ridhi, Sidhi &amp; Reyansh
         </p>
       </div>
     </section>

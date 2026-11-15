@@ -203,19 +203,19 @@ export function InvitationDetailsSection() {
 
         <div className="invitation-details-copy">
           <p id="invitation-details-title" className="invitation-details-intro">
-            You are invited to the wedding festivities of
+            You are invited to the reception celebration of
           </p>
 
           <div className="invitation-person">
-            <h2>Ishita</h2>
+            <h2>Prateek</h2>
             <LotusSticker className="lotus-left" />
             <p className="family-line">
-              <span>Granddaughter of</span>
-              Late Shanti Devi Agarwal &amp; Late Amichand Agarwal
+              <span>Grandson of</span>
+              Late Hariom Agarwal &amp; Late Prabha Devi
             </p>
             <p className="family-line">
-              <span>Daughter of</span>
-              Ms. Aparna Agarwal &amp; Late Sanjeev Agarwal
+              <span>Son of</span>
+              Mrs. Preeti Agarwal &amp; Mr. Sanjay Agarwal
             </p>
           </div>
 
@@ -224,18 +224,19 @@ export function InvitationDetailsSection() {
           </div>
 
           <div className="invitation-person">
-            <h2>Prateek</h2>
+            <h2>Ishita</h2>
             <LotusSticker className="lotus-right" />
             <p className="family-line">
-              <span>Son of</span>
-              Mrs. Preeti Agarwal &amp; Mr. Sanjay Agarwal
+              <span>Daughter of</span>
+              Ms. Aparna Agarwal &amp; Late Sanjeev Agarwal
             </p>
           </div>
 
           <p className="invitation-closing">
-            We cordially invite you to join us in celebrating the union of{" "}
-            <strong>Ishita &amp; Prateek</strong> as they embark on their beautiful journey of
-            togetherness.
+            We cordially invite you to join us in celebrating <strong>
+              Prateek &amp; Ishita
+            </strong>{" "}
+            and their beautiful journey of togetherness.
           </p>
         </div>
       </div>

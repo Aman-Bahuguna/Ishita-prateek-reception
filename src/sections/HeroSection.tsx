@@ -207,7 +207,7 @@ export function HeroSection() {
         ref={logoRef}
         className="wedding-logo"
         src="/images/wedding-monogram.png"
-        alt="Ishita and Prateek wedding monogram"
+        alt="Prateek and Ishita wedding monogram"
       />
 
       <section className="hero-section" aria-label="Wedding invitation">
@@ -229,10 +229,10 @@ export function HeroSection() {
               ॐ श्री गणेशाय नमः
             </p>
             <p ref={welcomeRef} className="hero-welcome">
-              Welcome to the wedding festivities of
+              Welcome to the reception celebration of
             </p>
             <h1 ref={namesRef} className="hero-names">
-              Ishita <span>&amp;</span> Prateek
+              Prateek <span>&amp;</span> Ishita
             </h1>
           </div>
 
@@ -240,7 +240,7 @@ export function HeroSection() {
             ref={coupleRef}
             className="couple-cutout"
             src="/images/ishita-prateek-cutout.png"
-            alt="Ishita and Prateek"
+            alt="Prateek and Ishita"
           />
 
           <a

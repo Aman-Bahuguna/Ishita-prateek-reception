@@ -1,4 +1,4 @@
-const VENUE_QUERY = "Agarwal Sabha, Kosi Road, Ramnagar, Nainital";
+const VENUE_QUERY = "Taj Banquet Hall, Civil Lines, near Railway Harthala Colony, Moradabad";
 const VENUE_MAP_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(VENUE_QUERY)}`;
 const VENUE_EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent(VENUE_QUERY)}&output=embed`;
 
@@ -26,9 +26,9 @@ export function LocationSection() {
               </svg>
             </span>
             <div>
-              <p className="location-label">Wedding venue</p>
-              <h3>Agarwal Sabha</h3>
-              <address>Kosi Road, Ramnagar, Nainital</address>
+              <p className="location-label">Reception venue</p>
+              <h3>Taj Banquet Hall</h3>
+              <address>Civil Lines, near Railway Harthala Colony, Moradabad</address>
             </div>
           </div>
 
@@ -37,11 +37,11 @@ export function LocationSection() {
             href={VENUE_MAP_URL}
             target="_blank"
             rel="noreferrer"
-            aria-label="Open Agarwal Sabha, Kosi Road, Ramnagar in Google Maps"
+            aria-label="Open Taj Banquet Hall, Civil Lines, Moradabad in Google Maps"
           >
             <iframe
               src={VENUE_EMBED_URL}
-              title="Map showing Agarwal Sabha in Ramnagar"
+              title="Map showing Taj Banquet Hall in Moradabad"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               tabIndex={-1}

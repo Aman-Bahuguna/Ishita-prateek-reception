@@ -3,45 +3,14 @@ import { gsap } from "../lib/gsap";
 
 const festivities = [
   {
-    name: "The Yellow Affair",
-    detail: "Haldi",
-    time: "12:00 PM",
-    icon: (
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <circle cx="24" cy="24" r="7" />
-        <path d="M24 5v7M24 36v7M5 24h7M36 24h7M10.6 10.6l5 5M32.4 32.4l5 5M37.4 10.6l-5 5M15.6 32.4l-5 5" />
-      </svg>
-    ),
+    name: "Reception Ceremony",
+    time: "7:00 PM",
+    icon: "🎉",
   },
   {
-    name: "Lunch",
-    time: "1:30 PM",
-    icon: (
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <path d="M8 25h32M12 25c.6-9 5.1-13.5 12-13.5S35.4 16 36 25M6 31h36M24 11.5V8" />
-        <circle cx="24" cy="7" r="1.5" />
-      </svg>
-    ),
-  },
-  {
-    name: "Bhaat Ceremony",
-    time: "4:00 PM",
-    icon: (
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <path d="M24 8c3.5 6.4 7.8 10.3 14 12-3.2 10.4-7.9 16.8-14 20-6.1-3.2-10.8-9.6-14-20 6.2-1.7 10.5-5.6 14-12Z" />
-        <path d="M17 24c3.2.2 5.5 1.9 7 5 1.5-3.1 3.8-4.8 7-5M24 13v16" />
-      </svg>
-    ),
-  },
-  {
-    name: "Tea & Snacks",
-    time: "5:30 PM",
-    icon: (
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <path d="M9 20h26v8c0 6.1-4.9 11-11 11h-4c-6.1 0-11-4.9-11-11v-8ZM35 23h3.5a5.5 5.5 0 0 1 0 11H34M7 40h32" />
-        <path d="M17 15c-2-2-.7-4 1-5.5M25 15c-2-2-.7-4 1-5.5" />
-      </svg>
-    ),
+    name: "Dinner",
+    time: "8:00 PM",
+    icon: "🍽️",
   },
 ];
 
@@ -222,8 +191,9 @@ export function FestivitiesTimelineSection() {
 
       <div className="festivities-content">
         <header className="festivities-header">
+          <p className="festivities-eyebrow">Event timeline</p>
           <h2 id="festivities-title" className="festivities-title">
-            Festivities Timeline
+            Evening of Elegance
           </h2>
           <div className="festivities-title-rule" aria-hidden="true">
             <span />
@@ -241,18 +211,21 @@ export function FestivitiesTimelineSection() {
                   <time>{festivity.time}</time>
                 </div>
                 <div className="festivity-marker" aria-hidden="true">
-                  <span className="festivity-marker-icon">{festivity.icon}</span>
+                  <span className="festivity-marker-icon festivity-marker-emoji">
+                    {festivity.icon}
+                  </span>
                 </div>
                 <div className="festivity-copy">
                   <h3>{festivity.name}</h3>
-                  {festivity.detail && <p>{festivity.detail}</p>}
                 </div>
               </li>
             ))}
           </ol>
         </div>
 
-        <p className="festivities-footer">Come, celebrate and make memories with us</p>
+        <p className="festivities-footer">
+          06 · 12 · 2026 — come celebrate and make memories with us
+        </p>
       </div>
     </section>
   );

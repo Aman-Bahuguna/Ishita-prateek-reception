@@ -143,13 +143,13 @@ export function ScratchDateCard() {
       <div className="scratch-card-reveal" aria-live="polite">
         <span className="date-kicker">Save the date</span>
         <strong>
-          <span>02</span>
+          <span>06</span>
           <i aria-hidden="true" />
           <span>12</span>
           <i aria-hidden="true" />
           <span>2026</span>
         </strong>
-        <span className="date-caption">The celebration of Ishita &amp; Prateek</span>
+        <span className="date-caption">The reception of Prateek &amp; Ishita</span>
       </div>
       <canvas
         ref={canvasRef}
@@ -159,7 +159,7 @@ export function ScratchDateCard() {
         onPointerUp={stopScratching}
         onPointerCancel={stopScratching}
         onPointerLeave={stopScratching}
-        aria-label="Scratch this card to reveal the wedding date"
+        aria-label="Scratch this card to reveal the reception date"
       />
       <button className="reveal-date-button" type="button" onClick={() => setIsRevealed(true)}>
         Reveal date

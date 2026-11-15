@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const WEDDING_DATE = new Date("2026-12-02T00:00:00+05:30").getTime();
+const WEDDING_DATE = new Date("2026-12-06T00:00:00+05:30").getTime();
 
 export function WeddingCountdown() {
   const getTimeRemaining = () => {
@@ -32,9 +32,9 @@ export function WeddingCountdown() {
     <section className="countdown-section" aria-labelledby="countdown-title">
       <div className="countdown-flourish countdown-flourish-left" aria-hidden="true" />
       <div className="countdown-content">
-        <p className="countdown-kicker">Counting down to forever</p>
-        <h2 id="countdown-title">The Celebration Begins In</h2>
-        <div className="countdown-grid" role="timer" aria-label="Countdown to 2 December 2026">
+        <p className="countdown-kicker">Counting down to an elegant evening</p>
+        <h2 id="countdown-title">The Reception Begins In</h2>
+        <div className="countdown-grid" role="timer" aria-label="Countdown to 6 December 2026">
           {countdown.map((unit) => (
             <div className="countdown-unit" key={unit.label}>
               <strong>{String(unit.value).padStart(2, "0")}</strong>
@@ -42,7 +42,7 @@ export function WeddingCountdown() {
             </div>
           ))}
         </div>
-        <p className="countdown-date">02 · 12 · 2026</p>
+        <p className="countdown-date">06 · 12 · 2026</p>
       </div>
       <div className="countdown-flourish countdown-flourish-right" aria-hidden="true" />
     </section>
